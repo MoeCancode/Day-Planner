@@ -15,11 +15,14 @@ textarea{
 
 .jumbotron {
   text-align: center;
-  background-color: transparent;
-  color: black;
+  background-image: url("./assets/doodle.jpg");
+  background-size: cover;
+  background-position: center center;
+  color: white;
   border-radius: 0;
   border-bottom: 10px solid black;
 }
+
 
 .description{
   white-space: pre-wrap;
