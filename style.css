@@ -22,6 +22,7 @@ body {
   padding-right: 35px;
   padding-top: 10px;
   padding-bottom: 10px;
+  transition: all 0.4s ease-in-out;
 }
 
 
@@ -35,7 +36,7 @@ body {
   color: white;
   padding-left: 30px;
   padding-right: 30px;
-  border-left: 1px solid black;
+  border-bottom: 1.5px solid white;
   background-color: #068cd5;
 }
 
@@ -49,14 +50,17 @@ body {
 .customHourStyle {
   padding-left: 30px;
   padding-right: 30px;
-  border: 0.25px solid rgb(58, 58, 58);
-}
-
-.customCardMargin {
-  margin-bottom: 0;
+  border: 1.25px solid white;
+  font-size: 22px;
 }
 
 #currentDay {
   margin-top: 38px;
   font-size: 28px;
+}
+
+footer p {
+  text-align: center;
+  margin: 20px;
+  font-size: 25px;
 }
