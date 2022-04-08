@@ -7,7 +7,7 @@ dateDisplay.textContent = date;
 
 var currentHour = moment().hour();
 var workingHours = [9, 10, 11, 12, 13, 14, 15, 16, 17];
-// var workingHours = [16,17,18,19,20,21,22,23,24];
+
 var containerbox = document.querySelector(".container");
 //Function to style timeboxes according to current time
 //Function is called every second and it updates the stling accordingly
@@ -34,17 +34,6 @@ var keepChecking = setInterval(function() {
 
 }, 1000)
 
-
-// var savebuttons = document.querySelectorAll(".customButtonStyle");
-
-// for(var x = 0; x < 9; x++) {
-//     savebuttons[x].addEventListener("click", function() {
-//         var currentButton = savebuttons[x];
-//         console.log(currentButton);
-//         // var inputArea = savebuttons[x].previousElementSibling;
-//         // console.log(inputArea); 
-//     })
-// }
 
 //Using setitem we save to local storage
 
@@ -82,7 +71,7 @@ var inputFour = saveFour.previousElementSibling;
 saveFour.addEventListener("click", function(){
     
     var savedText = inputFour.value;
-    localStorage.setItem("Four", savedText);
+    localStorage.setItem("four", savedText);
 })
 
 //Button Five
@@ -95,12 +84,12 @@ saveFive.addEventListener("click", function(){
 })
 
 //Button Six
-var saveSix = document.querySelector("#Six");
+var saveSix = document.querySelector("#six");
 var inputSix = saveSix.previousElementSibling;
 saveSix.addEventListener("click", function(){
     
     var savedText = inputSix.value;
-    localStorage.setItem("Six", savedText);
+    localStorage.setItem("six", savedText);
 })
 
 //Button Seven
@@ -118,7 +107,7 @@ var inputEight = saveEight.previousElementSibling;
 saveEight.addEventListener("click", function(){
     
     var savedText = inputEight.value;
-    localStorage.setItem("Eight", savedText);
+    localStorage.setItem("eight", savedText);
 })
 
 //Button Nine
@@ -131,12 +120,13 @@ saveNine.addEventListener("click", function(){
 })
 
 //------------------------------------------------------------------
-
-// Using getitem we display input text
-// if(localStorage.getItem && saveOne) {
+//Using getitem to display key/value pairs
     inputOne.value = localStorage.getItem("one");
-// }
-
-// else if (localStorage.getItem && saveOne) {
     inputTwo.value = localStorage.getItem("two");
-// }
+    inputThree.value = localStorage.getItem("three");
+    inputFour.value = localStorage.getItem("four");
+    inputFive.value = localStorage.getItem("five");
+    inputSix.value = localStorage.getItem("six");
+    inputSeven.value = localStorage.getItem("seven");
+    inputEight.value = localStorage.getItem("eight");
+    inputNine.value = localStorage.getItem("nine");
