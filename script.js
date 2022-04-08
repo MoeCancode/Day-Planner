@@ -6,7 +6,6 @@ dateDisplay.textContent = date;
 
 
 var currentHour = moment().hour();
-console.log(currentHour);
 var workingHours = [9, 10, 11, 12, 13, 14, 15, 16, 17];
 // var workingHours = [16,17,18,19,20,21,22,23,24];
 var containerbox = document.querySelector(".container");
@@ -34,3 +33,41 @@ var keepChecking = setInterval(function() {
 
 
 }, 1000)
+
+
+// var savebuttons = document.querySelectorAll(".customButtonStyle");
+
+// for(var x = 0; x < 9; x++) {
+//     savebuttons[x].addEventListener("click", function() {
+//         var currentButton = savebuttons[x];
+//         console.log(currentButton);
+//         // var inputArea = savebuttons[x].previousElementSibling;
+//         // console.log(inputArea); 
+//     })
+// }
+
+var saveOne = document.querySelector("#one");
+var inputOne = saveOne.previousElementSibling;
+//Using setitem we save to local storage
+saveOne.addEventListener("click", function(){
+    
+    var savedText = inputOne.value;
+    localStorage.setItem("one", savedText);
+})
+
+var saveTwo = document.querySelector("#two");
+var inputTwo = saveTwo.previousElementSibling;
+saveTwo.addEventListener("click", function(){
+    
+    var savedText = inputTwo.value;
+    localStorage.setItem("one", savedText);
+})
+
+// Using getitem we display input text
+if(localStorage.getItem && saveOne) {
+    inputOne.value = localStorage.getItem("one");
+}
+
+else if (localStorage.getItem && saveOne) {
+    inputTwo.value = localStorage.getItem("two");
+}
