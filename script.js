@@ -46,28 +46,97 @@ var keepChecking = setInterval(function() {
 //     })
 // }
 
+//Using setitem we save to local storage
+
+//Button One
 var saveOne = document.querySelector("#one");
 var inputOne = saveOne.previousElementSibling;
-//Using setitem we save to local storage
 saveOne.addEventListener("click", function(){
     
     var savedText = inputOne.value;
     localStorage.setItem("one", savedText);
 })
 
+
+//Button Two
 var saveTwo = document.querySelector("#two");
 var inputTwo = saveTwo.previousElementSibling;
 saveTwo.addEventListener("click", function(){
     
     var savedText = inputTwo.value;
-    localStorage.setItem("one", savedText);
+    localStorage.setItem("two", savedText);
 })
 
-// Using getitem we display input text
-if(localStorage.getItem && saveOne) {
-    inputOne.value = localStorage.getItem("one");
-}
+//Button Three
+var saveThree = document.querySelector("#three");
+var inputThree = saveThree.previousElementSibling;
+saveThree.addEventListener("click", function(){
+    
+    var savedText = inputThree.value;
+    localStorage.setItem("three", savedText);
+})
 
-else if (localStorage.getItem && saveOne) {
+//Button Four
+var saveFour = document.querySelector("#four");
+var inputFour = saveFour.previousElementSibling;
+saveFour.addEventListener("click", function(){
+    
+    var savedText = inputFour.value;
+    localStorage.setItem("Four", savedText);
+})
+
+//Button Five
+var saveFive = document.querySelector("#five");
+var inputFive = saveFive.previousElementSibling;
+saveFive.addEventListener("click", function(){
+    
+    var savedText = inputFive.value;
+    localStorage.setItem("five", savedText);
+})
+
+//Button Six
+var saveSix = document.querySelector("#Six");
+var inputSix = saveSix.previousElementSibling;
+saveSix.addEventListener("click", function(){
+    
+    var savedText = inputSix.value;
+    localStorage.setItem("Six", savedText);
+})
+
+//Button Seven
+var saveSeven = document.querySelector("#seven");
+var inputSeven = saveSeven.previousElementSibling;
+saveSeven.addEventListener("click", function(){
+    
+    var savedText = inputSeven.value;
+    localStorage.setItem("seven", savedText);
+})
+
+//Button Eight
+var saveEight = document.querySelector("#eight");
+var inputEight = saveEight.previousElementSibling;
+saveEight.addEventListener("click", function(){
+    
+    var savedText = inputEight.value;
+    localStorage.setItem("Eight", savedText);
+})
+
+//Button Nine
+var saveNine = document.querySelector("#nine");
+var inputNine = saveNine.previousElementSibling;
+saveNine.addEventListener("click", function(){
+    
+    var savedText = inputNine.value;
+    localStorage.setItem("nine", savedText);
+})
+
+//------------------------------------------------------------------
+
+// Using getitem we display input text
+// if(localStorage.getItem && saveOne) {
+    inputOne.value = localStorage.getItem("one");
+// }
+
+// else if (localStorage.getItem && saveOne) {
     inputTwo.value = localStorage.getItem("two");
-}
+// }
