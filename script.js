@@ -3,4 +3,4 @@ var dateDisplay = document.querySelector("#currentDay");
 
 dateDisplay.textContent = moment().format("dddd, MMMM Do YYYY");
 
-// dateDisplay.textContent = moment().format("dddd, MMMM Do YYYY");
+console.log(moment());
