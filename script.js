@@ -27,7 +27,7 @@ var keepChecking = setInterval(function() {
         }
         else if(currentHour < workingHours[i]) {
             // Styling for future
-            containerbox.children[i].style.backgroundColor = "#45cb45";
+            containerbox.children[i].style.backgroundColor = "#7fe27f";
         }
     }
 
